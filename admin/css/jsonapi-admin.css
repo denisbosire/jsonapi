@@ -1,0 +1,72 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .data-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.data-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+.data-table th,
+.data-table td {
+    padding: 12px 15px;
+}
+.data-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.data-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.data-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+#postlist{
+    border:2px solid red;
+}
+#todos{
+    border:2px solid green;
+}
+#usercontent {
+    display: flex;
+}
+#usercontent span {
+    font-weight: normal;
+}
+#usercontent h2 {
+    font-size: 1.5em;
+}
+#usercontent .postlist {
+    flex-basis: 50%;
+    flex-grow: 0;
+}
+#usercontent .todos {
+    flex-basis: 25%;
+    flex-grow: 0;    
+}
+#usercontent .albums {
+    flex-basis: 25%;
+    flex-grow: 0;    
+}
+#usercontent .photos {
+    
+}
+#usercontent .photos li {
+
+}
+#usercontent .comments {
+    font-size: 14px;
+}
+.commentclass{
+    font-size: 14px;
+}

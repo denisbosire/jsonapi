@@ -1,0 +1,176 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ h2.page-title {
+    text-align: center;
+    text-transform: uppercase;
+ }
+ #usercontent hr {
+    border-style: none;
+    border-bottom: 1px solid #28303d14;
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+}
+ .data-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 1380px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+table.data-table.hidden {
+    display: none;
+}
+.data-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    
+}
+.data-table th,
+.data-table td {
+    padding: 12px 15px;
+}
+.data-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.data-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.data-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+#usercontent .postlist {
+    flex-basis: 50%;
+    flex-grow: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#postlist{
+    border:2px solid red;
+}
+#todos{
+    border:2px solid green;
+}
+#usercontent {
+    display: flex;
+    padding: 20px;
+    width: 95%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+#usercontent span {
+    font-weight: normal;
+}
+#usercontent h2 {
+    font-size: 1.5em;
+}
+
+#usercontent .todos {
+    display: grid;
+    padding: 0;    
+}
+#usercontent .todos li {
+    display: inline-flex;
+    align-items: center;
+    text-transform: capitalize;
+    border-bottom: 1px solid #28303d14;
+    padding: 10px 0;
+}
+
+#usercontent .albums {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.wrap.albums li {
+    padding: 10px 0;
+    border-bottom: 1px solid #28303d14;
+    clear: both;
+}
+#usercontent .photos {
+    display: inline-block;
+    padding: 25px;
+}
+ul.wrap.photos a{
+    float: left;
+    margin: 5px;
+}
+#usercontent .photos li {
+
+}
+#usercontent .comments {
+    font-size: 14px;
+}
+.commentclass{
+    font-size: 14px;
+}
+#usercontent .status-done {
+
+}
+
+/*Hidden class for adding and removing*/
+.lds-dual-ring.hidden {
+    display: none;
+}
+
+/*Add an overlay to the entire page blocking any further presses to buttons or other elements.*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.0);
+    z-index: 999;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+/*Spinner Styles*/
+.lds-dual-ring {
+    display: block;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: flex;
+    align-self: center;
+    width: 64px;
+    height: 64px;
+    margin: 5% auto;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+a.bckbtn {
+    display: none;
+    position: absolute;
+    top: 20%;
+}
+.is-light-theme #masthead {
+    display: none;
+}
