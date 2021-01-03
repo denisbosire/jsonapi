@@ -302,4 +302,3 @@ class GetApi {
     }
 }
 //$getapi = new GetApi();
-

@@ -6,20 +6,11 @@
     'aliases' => 
     array (
     ),
-    'reference' => '255d3fa0165400ac9645490f4b54ce10c60bc973',
-    'name' => '__root__',
+    'reference' => 'bcef32f3c2ba9bf401754e48c8c7cf332c5c05c5',
+    'name' => 'vvv/phpcs',
   ),
   'versions' => 
   array (
-    '__root__' => 
-    array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '255d3fa0165400ac9645490f4b54ce10c60bc973',
-    ),
     'doctrine/instantiator' => 
     array (
       'pretty_version' => '1.4.0',
@@ -388,6 +379,15 @@
       array (
       ),
       'reference' => '75a63c33a8577608444246075ea0af0d052e452a',
+    ),
+    'vvv/phpcs' => 
+    array (
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'bcef32f3c2ba9bf401754e48c8c7cf332c5c05c5',
     ),
     'webmozart/assert' => 
     array (
