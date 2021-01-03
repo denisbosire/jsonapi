@@ -112,7 +112,6 @@ class Jsonapi {
 		 * of the plugin.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-jsonapi-i18n.php';
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-jsonapi-functions.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
@@ -124,9 +123,13 @@ class Jsonapi {
 		 * side of the site.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-jsonapi-public.php';
-
+		/**
+		 * Template for the restapi page
+		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-jsonapi-template.php';
-
+		/**
+		 * Get API class
+		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-jsonapi-getapi.php';
 
 		$this->loader = new Jsonapi_Loader();

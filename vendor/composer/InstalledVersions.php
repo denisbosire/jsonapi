@@ -29,11 +29,20 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'bcef32f3c2ba9bf401754e48c8c7cf332c5c05c5',
-    'name' => 'vvv/phpcs',
+    'reference' => 'cf99fa3784e1fc04cfabf552f68b394c6ec83944',
+    'name' => '__root__',
   ),
   'versions' => 
   array (
+    '__root__' => 
+    array (
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'cf99fa3784e1fc04cfabf552f68b394c6ec83944',
+    ),
     'doctrine/instantiator' => 
     array (
       'pretty_version' => '1.4.0',
@@ -109,6 +118,33 @@ private static $installed = array (
       array (
       ),
       'reference' => 'e4782611070e50613683d2b9a57730e9a3ba5451',
+    ),
+    'phpcompatibility/php-compatibility' => 
+    array (
+      'pretty_version' => '9.3.5',
+      'version' => '9.3.5.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9fb324479acf6f39452e0655d2429cc0d3914243',
+    ),
+    'phpcompatibility/phpcompatibility-paragonie' => 
+    array (
+      'pretty_version' => '1.3.0',
+      'version' => '1.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b862bc32f7e860d0b164b199bd995e690b4b191c',
+    ),
+    'phpcompatibility/phpcompatibility-wp' => 
+    array (
+      'pretty_version' => '2.1.0',
+      'version' => '2.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '41bef18ba688af638b7310666db28e1ea9158b2f',
     ),
     'phpdocumentor/reflection-common' => 
     array (
@@ -385,6 +421,15 @@ private static $installed = array (
       ),
       'reference' => 'c6c1022351a901512170118436c764e473f6de8c',
     ),
+    'squizlabs/php_codesniffer' => 
+    array (
+      'pretty_version' => '3.5.8',
+      'version' => '3.5.8.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9d583721a7157ee997f235f327de038e7ea6dac4',
+    ),
     'symfony/polyfill-ctype' => 
     array (
       'pretty_version' => 'v1.20.0',
@@ -402,15 +447,6 @@ private static $installed = array (
       array (
       ),
       'reference' => '75a63c33a8577608444246075ea0af0d052e452a',
-    ),
-    'vvv/phpcs' => 
-    array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
-      'aliases' => 
-      array (
-      ),
-      'reference' => 'bcef32f3c2ba9bf401754e48c8c7cf332c5c05c5',
     ),
     'webmozart/assert' => 
     array (
