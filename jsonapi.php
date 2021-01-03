@@ -79,7 +79,7 @@ register_deactivation_hook( __FILE__, 'deactivate_jsonapi' );
  * admin-specific hooks, and public-facing site hooks.
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-jsonapi.php';
-require_once plugin_dir_url( __FILE__ ) . 'vendor/autoload.php';
+//require_once plugin_dir_url( __FILE__ ) . 'vendor/autoload.php';
 
 
 /**
