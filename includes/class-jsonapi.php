@@ -168,6 +168,13 @@ class Jsonapi {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 
 	}
+	/**
+	 * Register all of the hooks related to the get api class
+	 * of the plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 */
 	private function define_getapi_hooks() {
 
 		$getapi = new GetApi( $this->get_plugin_name(), $this->get_version() );
@@ -175,7 +182,7 @@ class Jsonapi {
 		$this->loader->add_action( 'wp_enqueue_styles', $getapi, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $getapi, 'enqueue_scripts' );
 		$this->loader->add_action( 'parse_request', $getapi, 'my_custom_url_handler' );
-
+		// WP AJAX
 		$this->loader->add_action( 'wp_ajax_nopriv_get_user_posts', $getapi, 'get_user_posts' );
 		$this->loader->add_action( 'wp_ajax_get_user_posts', $getapi, 'get_user_posts' );
 		$this->loader->add_action( 'wp_ajax_nopriv_get_user_todos', $getapi, 'get_user_todos' );
@@ -186,13 +193,23 @@ class Jsonapi {
 		$this->loader->add_action( 'wp_ajax_get_photos', $getapi, 'get_photos' );
 		$this->loader->add_action( 'wp_ajax_nopriv_get_comments', $getapi, 'get_comments' );
 		$this->loader->add_action( 'wp_ajax_get_comments', $getapi, 'get_comments' );
+		// Add action, use this hook in the template
 		$this->loader->add_action( 'jsonapi_init', $getapi, 'jsonapi_page', 7 );
 	}
+	/**
+	 * Register all of the hooks related to the custom template functionality
+	 * of the plugin.
+	 *
+	 * @since    1.0.0
+	 * @access   private
+	 */
 	private function define_template_hooks() {
 		$template = new Template_Loader( $this->get_plugin_name(), $this->get_version() );
+
 		$this->loader->add_filter( 'init', $template, 'jsonapi_rewite' );
 		$this->loader->add_filter( 'query_vars', $template, 'jsonapi_custom_query_vars' );
 		$this->loader->add_filter( 'template_include', $template, 'jsonapi_custom_template', 99 );
+		// add dashicons, not automatically loaded in custom templates
 		$this->loader->add_action( 'wp_enqueue_scripts', $template, 'jsonapi_load_dashicons' );
 
 	}
