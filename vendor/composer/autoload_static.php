@@ -34,6 +34,10 @@ class ComposerStaticInit51f4111aa5491926a2eee7f6cfb37efa
             'Psr\\Http\\Client\\' => 16,
             'Prophecy\\' => 9,
         ),
+        'N' => 
+        array (
+            'NeutronStandard\\' => 16,
+        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -44,6 +48,7 @@ class ComposerStaticInit51f4111aa5491926a2eee7f6cfb37efa
         array (
             'Doctrine\\Instantiator\\' => 22,
             'DeepCopy\\' => 9,
+            'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 55,
         ),
     );
 
@@ -74,6 +79,10 @@ class ComposerStaticInit51f4111aa5491926a2eee7f6cfb37efa
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
         ),
+        'NeutronStandard\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/automattic/phpcs-neutron-standard/NeutronStandard',
+        ),
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
@@ -93,6 +102,10 @@ class ComposerStaticInit51f4111aa5491926a2eee7f6cfb37efa
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/dealerdirect/phpcodesniffer-composer-installer/src',
         ),
     );
 

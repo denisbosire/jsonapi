@@ -7,10 +7,11 @@
 - MySQL 5.5
 
 # Installation and usage instructions
-You can download & install the plugin without any special requirements
-- After activatinng the plugin navigate to https://YOURURL/custom_url
-- there is no admin page for the plugin, everything runs on the page above.
-* if this plugin was publicly available, I would have set it up as a composer package, unfortunately this is not possible with a private repo like this one.
+Set up instructions:
+- Download the plugin & Install it, do not activate it.
+- Open terminal, navigate to this plugin directory and run `composer install`
+- Activate the plugin, then navigate to https://YOURURL/custom_url
+- There is no admin page for the plugin, everything runs on the page above.
 
 # non-obvious implementation choices
 I decided to use GuzzleHttp instead of wp_request() so that I could use composer, & also give myself abit of a challenge by using someting new.

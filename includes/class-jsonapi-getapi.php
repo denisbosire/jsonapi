@@ -62,7 +62,7 @@ class Get_Rest_Api {
 		// $this->jsonapi_page();
 	}
 	// Load CSS
-	public function enqueue_styles() {
+	public function enqueue_styles(){
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'public/css/jsonapi-public.css', array(), $this->version, 'all' );
 
@@ -88,9 +88,9 @@ class Get_Rest_Api {
 	}
 
 	// Print the markup for the page
-	public function jsonapi_page() {
+	public function jsonapi_page(){
 		// this is the initial table for users
-		echo '<h2 class="page-title">Json API Page</h2>';
+		echo '<h2 class="page-title">'. esc_html__( 'Rest Api Placeholder', 'jsonapi' ) .'</h2>';
 		echo '<div id="loader" class="lds-dual-ring hidden overlay"></div>';
 		// Could use as well, wp_remote_get
 		$client = new Client(
