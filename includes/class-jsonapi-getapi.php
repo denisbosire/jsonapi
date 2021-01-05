@@ -1,5 +1,5 @@
 <?php
-namespace Jsonapi;
+//namespace Jsonapi;
 
 // require_once plugin_dir_url( __DIR__ ) . 'vendor/autoload.php';
 require dirname( __FILE__ ) . '/../vendor/autoload.php';
@@ -26,7 +26,7 @@ use GuzzleHttp\Client;
  * @subpackage Jsonapi/admin
  * @author     Denis Bosire <denischweya@gmail.com>
  */
-class GetApi {
+class Get_Rest_Api {
 	// use GuzzleHttp\Client;
 	/**
 	 * The ID of this plugin.

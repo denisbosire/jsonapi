@@ -177,7 +177,7 @@ class Jsonapi {
 	 */
 	private function define_getapi_hooks() {
 
-		$getapi = new GetApi( $this->get_plugin_name(), $this->get_version() );
+		$getapi = new Get_Rest_Api( $this->get_plugin_name(), $this->get_version() );
 
 		$this->loader->add_action( 'wp_enqueue_styles', $getapi, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $getapi, 'enqueue_scripts' );
