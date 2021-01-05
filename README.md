@@ -8,7 +8,9 @@
 
 # Installation and usage instructions
 You can download & install the plugin without any special requirements
-- After activatinng the plugin navigate to https://YOURURL/custom_url
+- Download the plugin & Install it, do not activate,
+- Open terminal and run composer install
+- Activate the plugin, then navigate to https://YOURURL/custom_url
 - there is no admin page for the plugin, everything runs on the page above.
 
 # non-obvious implementation choices
