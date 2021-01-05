@@ -62,7 +62,7 @@ class Get_Rest_Api {
 		// $this->jsonapi_page();
 	}
 	// Load CSS
-	public function enqueue_styles() {
+	public function enqueue_styles(){
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'public/css/jsonapi-public.css', array(), $this->version, 'all' );
 
