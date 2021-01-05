@@ -1,4 +1,6 @@
 <?php
+namespace Jsonapi;
+
 // require_once plugin_dir_url( __DIR__ ) . 'vendor/autoload.php';
 require dirname( __FILE__ ) . '/../vendor/autoload.php';
 // loca the class
