@@ -27,7 +27,6 @@ use GuzzleHttp\Client;
  * @author     Denis Bosire <denischweya@gmail.com>
  */
 class Get_Rest_Api {
-	// use GuzzleHttp\Client;
 	/**
 	 * The ID of this plugin.
 	 *
@@ -58,10 +57,10 @@ class Get_Rest_Api {
 		$this->plugin_name = $plugin_name;
 		$this->version     = $version;
 
-		// $this->getClient();
-		// $this->jsonapi_page();
 	}
-	// Load CSS
+	/**
+     * Load CSS.
+     * */
 	public function enqueue_styles(){
 
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'public/css/jsonapi-public.css', array(), $this->version, 'all' );
@@ -110,11 +109,10 @@ class Get_Rest_Api {
 			)
 		);
 
-		// get status code using $response->getStatusCode();
 
 		$body     = $response->getBody();
 		$arr_body = json_decode( $body, true );
-		// start creating the layout
+		// start creating the layout.
 		?>
 		<div id="usercontent">
 			<a href="#" class="bckbtn"><span class="dashicons dashicons-arrow-left-alt"><?php esc_html_e( 'Back', 'jsonapi' ); ?></span></a>
@@ -126,7 +124,6 @@ class Get_Rest_Api {
 			</div> 
 			</div>
 		</div>
-		
 		<div id="content-area">
 
 		<table class="data-table">
