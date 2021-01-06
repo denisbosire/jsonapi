@@ -26,7 +26,6 @@
 				   todos += "</li>";
 				 });
 		        todos += '</ul>';
-		        //console.log(todos);
 		        jQuery('.todos').html(todos);
 			  	},
 			    error: function(errorThrown){
