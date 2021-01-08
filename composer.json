@@ -1,4 +1,17 @@
 {
+    "name": "wp-rest-api",
+    "description": "WP plugin for demonstrating how REST API works",
+    "type": "wordpress-plugin",
+    "require": {
+        "composer/installers": "^1.0"
+    },
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Denis Bosire",
+            "email": "denischweya@gmail.com"
+        }
+    ],
     "require": {
         "guzzlehttp/guzzle": "^7.2",
         "squizlabs/php_codesniffer": "3.*",
