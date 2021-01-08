@@ -2,9 +2,6 @@
     "name": "pixeltribe/jsonapi",
     "description": "WP plugin for demonstrating how REST API works",
     "type": "wordpress-plugin",
-    "require": {
-        "composer/installers": "^1.0"
-    },
     "license": "GPL-3.0+",
     "authors": [
         {
@@ -13,6 +10,7 @@
         }
     ],
     "require": {
+        "composer/installers": "^1.0",
         "guzzlehttp/guzzle": "^7.2",
         "squizlabs/php_codesniffer": "3.*",
         "friendsofphp/php-cs-fixer": "^2.17"
