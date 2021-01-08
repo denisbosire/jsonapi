@@ -112,6 +112,6 @@ class Jsonapi_Admin {
 		);
 
 	}
-	
+
 
 }
