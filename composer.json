@@ -1,5 +1,5 @@
 {
-    "name": "wp-rest-api",
+    "name": "pixeltribe/jsonapi",
     "description": "WP plugin for demonstrating how REST API works",
     "type": "wordpress-plugin",
     "require": {
